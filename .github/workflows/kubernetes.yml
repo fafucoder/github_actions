@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Creating kind cluster
-        uses: kindest/node:v1.21.1
+        uses: helm/kind-action@v1.2.0
       - name: Install KubeSphere
         run: |
           kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.0.0/kubesphere-installer.yaml
